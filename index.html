@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream IAS</title>
+    <style>
+      .section {
+        max-width: 900px;
+        width: 100%;
+        background: #fff;
+        padding: 40px;
+        border-top: 10px solid #0989ff;
+        overflow-y: auto;
+        margin: 10px;
+      }
+      .qr_code {
+        display: none;
+        text-align: center;
+      }
+      .get_qr {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        background: #efefef;
+        border: 1px solid #999;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <body class="bg-gray-50 font-sans">
+      <!-- Navigation -->
+      <nav class="bg-blue-600 text-white p-4 shadow-md">
+          <div class="container mx-auto flex justify-between items-center">
+              <div class="text-2xl font-bold">DREAM IAS</div>
+              <div class="space-x-6">
+                  <a href="#" class="hover:text-blue-200">Home</a>
+                  <a href="#" class="hover:text-blue-200">Courses</a>
+                  <a href="#" class="hover:text-blue-200">About</a>
+                  <a href="#" class="hover:text-blue-200">Contact</a>
+              </div>
+          </div>
+      </nav>
+  
+      <!-- Hero Section -->
+      <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center py-20">
+          <div class="container mx-auto px-4">
+              <h1 class="text-5xl font-bold mb-6">Transform Your IAS Dream into Reality</h1>
+              <p class="text-xl mb-8">Comprehensive coaching that guides you towards success in the UPSC Civil Services Examination</p>
+              <div class="space-x-4">
+                  <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Explore Courses</a>
+                  <a href="#" class="bg-transparent border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">Contact Us</a>
+              </div>
+          </div>
+      </header>
+  
+      <!-- Features Section -->
+      <section class="py-16 bg-white">
+          <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold text-center mb-12">Why Choose DREAM IAS?</h2>
+              <div class="grid md:grid-cols-3 gap-8">
+                  <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+                      <i class="fas fa-chalkboard-teacher text-blue-600 text-5xl mb-4"></i>
+                      <h3 class="text-xl font-semibold mb-4">Expert Faculty</h3>
+                      <p>Experienced educators with proven track record in UPSC coaching</p>
+                  </div>
+                  <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+                      <i class="fas fa-book-open text-blue-600 text-5xl mb-4"></i>
+                      <h3 class="text-xl font-semibold mb-4">Comprehensive Curriculum</h3>
+                      <p>Meticulously designed study material covering all UPSC syllabus</p>
+                  </div>
+                  <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+                      <i class="fas fa-chart-line text-blue-600 text-5xl mb-4"></i>
+                      <h3 class="text-xl font-semibold mb-4">Performance Tracking</h3>
+                      <p>Regular mock tests and personalized performance analysis</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+      <!-- Payment Section -->
+      <section class="container mx-auto px-4 py-12 max-w-2xl">
+        <div class="">
+            <h1 class="font-bold text-4xl mb-10">
+                ADEO Preparation Group Registration
+            </h1>
+        </div>
+        <div class="section">
+            <div class="form bg-white shadow-md rounded-lg p-6">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex flex-col">
+                        <label class="mb-2 text-gray-700">Full Name*</label>
+                        <input 
+                            type="text" 
+                            class="name px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            placeholder="Full Name" 
+                        />
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="mb-2 text-gray-700">Whatsapp Number*</label>
+                        <input 
+                            type="text" 
+                            class="number px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            placeholder="Ex- +919064973840" 
+                        />
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="mb-2 text-gray-700">Email*</label>
+                        <input 
+                            type="email" 
+                            class="email px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            placeholder="Email" 
+                        />
+                    </div>
+                    <button class="generate_qr bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300">
+                        NEXT
+                    </button>
+                </div>
+            </div>
+            <div class="qr_code shadow-md rounded-lg p-6 text-center d-none">
+                <p class="mb-4">Scan the QR Code with any UPI App and pay the amount.</p>
+                <img 
+                    src="" 
+                    alt="QR CODE" 
+                    class="get_qr w-64 h-64 mx-auto bg-gray-200 object-cover rounded-lg mb-4"
+                />
+                <div class="flex flex-col">
+                    <label class="mb-2 text-gray-700">UTR/REFERENCE/TRANSACTION ID*</label>
+                    <input 
+                        type="text" 
+                        class="id px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        placeholder="Enter Transaction ID" 
+                    />
+                </div>
+                <button class="download_now mt-4 bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition duration-300">
+                    Download Now
+                </button>
+            </div>
+        </div>
+    </section>
+      
+      <!-- Call to Action -->
+      <section class="bg-blue-600 text-white py-16 text-center">
+          <div class="container mx-auto px-4">
+              <h2 class="text-4xl font-bold mb-6">Start Your IAS Preparation Journey</h2>
+              <p class="text-xl mb-8">Grab our free counseling session and understand your preparation strategy</p>
+              <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-100 transition">Book Free Counseling</a>
+          </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-white py-12">
+          <div class="container mx-auto px-4 text-center">
+              <div class="mb-6">
+                  <h3 class="text-2xl font-bold">DREAM IAS</h3>
+                  <p class="mt-2">Empowering UPSC Aspirants Since 2020</p>
+              </div>
+              <div class="space-x-4 mb-6">
+                  <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook text-2xl"></i></a>
+                  <a href="#" class="hover:text-blue-300"><i class="fab fa-twitter text-2xl"></i></a>
+                  <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram text-2xl"></i></a>
+                  <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin text-2xl"></i></a>
+              </div>
+              <p class="text-sm">&copy; 2024 DREAM IAS Coaching Institute. All Rights Reserved.</p>
+          </div>
+      </footer>
+
+    <!-- <section>
+      <div class="">
+        <h1 class="font-bold text-4xl mb-10">
+          ADEO Preparation Group Registration
+        </h1>
+      </div>
+      <div class="section">
+        <div class="form">
+          <div class="flex">
+            <label>Full Name*</label>
+            <input type="text" class="name" placeholder="Full Name" />
+          </div>
+          <div class="flex">
+            <label>Whatsapp Number (With ISD)*</label>
+            <input type="text" class="number" placeholder="Ex- +919064973840" />
+          </div>
+          <div class="flex">
+            <label>Email*</label>
+            <input type="email" class="email" placeholder="Email" />
+          </div>
+          <button class="generate_qr">NEXT</button>
+        </div>
+        <div class="qr_code">
+          <p>Scan the QR Code with any UPI App and pay the amount.</p>
+          <img src="" alt="QR CODE" class="get_qr" />
+          <div class="flex">
+            <label>UTR/REFERENCE/TRANSACTION ID*</label>
+            <input type="text" class="id" placeholder="Enter Transaction ID" />
+          </div>
+          <button class="download_now">Download Now</button>
+        </div>
+      </div>
+    </section> -->
+    <script>
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+      document.onkeydown = (e) => {
+        if (
+          event.keyCode === 123 ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+          (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+          (e.ctrlKey && e.keyCode === 85)
+        ) {
+          // Ctrl+U
+          return false;
+        }
+      };
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".generate_qr")
+          .addEventListener("click", function () {
+            let number = document.querySelector(".number").value.trim();
+            if (!number) {
+              alert("Please enter a valid phone number");
+              return;
+            }
+
+            let upiLink = `upi://pay?pa=7000234217@ybl%26pn=Rohit%20Chornele%26mc=0000%26mode=02%26am=1&%26tn=${number}`;
+            let qrCodeUrl = `https://quickchart.io/chart?cht=qr&chs=300x300&chl=${upiLink}`;
+
+            document.querySelector(".get_qr").src = qrCodeUrl;
+            document.querySelector(".form").style.display = "none";
+            document.querySelector(".qr_code").style.display = "block";
+          });
+
+        document
+          .querySelector(".download_now")
+          .addEventListener("click", function () {
+            let id = document.querySelector(".id").value.trim();
+            if (!id || id.length != 12) {
+              alert("Please enter a valid transaction ID");
+              return;
+            }
+            alert("Download started!");
+          });
+      });
+    </script>
+  </body>
+</html>
